@@ -1,0 +1,26 @@
+license = "AllRightsReserved"
+issueTrackerURL = "https://github.com/neoforged/NeoForge/pull/1322"
+modLoader = "javafml"
+loaderVersion = "[3,)"
+
+[[mods]]
+    modId = "${MOD_ID}"
+    displayName = "${MOD_NAME}"
+    version = "${MOD_VERSION}"
+    displayURL = "https://github.com/neoforged/NeoForge/pull/1322"
+    credits = "ApexStudios"
+    description = "Modded Feature Flag Example Mod (PR #1322)"
+    authors = "Apex"
+
+    [["dependencies.${MOD_ID}"]]
+        modId = "minecraft"
+        versionRange = "[1.21,1.21.1)"
+        type = "required"
+        ordering = "NONE"
+        side = "BOTH"
+    [["dependencies.${MOD_ID}"]]
+        modId = "neoforge"
+        versionRange = "[21.0,22.0)"
+        type = "required"
+        ordering = "NONE"
+        side = "BOTH"
