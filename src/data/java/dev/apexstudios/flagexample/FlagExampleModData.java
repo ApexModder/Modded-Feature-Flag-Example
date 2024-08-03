@@ -24,15 +24,6 @@ public final class FlagExampleModData {
             generator.addProvider(includeCommon, PackMetadataGenerator.forFeaturePack(pack, Component.translatable(DESC_KEY)));
 
             // server
-            // register data generator for our custom flags
-            //
-            // note: this should either be generated to a custom data pack, not your mods data pack
-            // including flags in the mods data pack will have them be always enabled
-            // flags should be provided to users via some external data pack
-            // or additional builtin data pack (see custom pack finders)
-            //
-            // this is only here easier testing and better showcasing of the example mod
-            generator.addProvider(includeServer, new FlagGenerator(pack, holders));
 
             // client
             generator.addProvider(includeClient, new EnglishGenerator(pack));

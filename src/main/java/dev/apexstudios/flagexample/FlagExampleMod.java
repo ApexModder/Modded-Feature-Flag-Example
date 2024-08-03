@@ -1,6 +1,5 @@
 package dev.apexstudios.flagexample;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -8,6 +7,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.flag.Flag;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -18,7 +18,7 @@ public final class FlagExampleMod {
 
     // define out custom `experimental` flag
     // note: this does not register the flag, just defines the identifier used for the flag
-    public static final ResourceLocation FLAG_EXPERIMENTAL = ResourceLocation.fromNamespaceAndPath(ID, "experimental");
+    public static final Flag FLAG_EXPERIMENTAL = Flag.of(ID, "experimental");
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ID);
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ID);

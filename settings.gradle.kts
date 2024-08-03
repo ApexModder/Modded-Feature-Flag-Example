@@ -2,7 +2,7 @@ dependencyResolutionManagement {
     versionCatalogs.create("libraries") {
         version("java", "21")
         version("minecraft", "1.21.0")
-        version("neoforge", "21.0.111-beta-pr-1322-pr-modded-flags")
+        version("neoforge", "21.0.169-pr-1322-pr-modded-flags")
         version("parchment-mappings", "2024.07.07")
         version("parchment-minecraft", "1.21")
 
