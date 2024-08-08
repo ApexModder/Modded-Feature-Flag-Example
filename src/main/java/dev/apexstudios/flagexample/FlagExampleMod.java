@@ -16,8 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class FlagExampleMod {
     public static final String ID = "flag_example_mod";
 
-    // define out custom `experimental` flag
-    // note: this does not register the flag, just defines the identifier used for the flag
+    // define our custom `experimental` flag
     public static final Flag FLAG_EXPERIMENTAL = Flag.of(ID, "experimental");
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ID);
